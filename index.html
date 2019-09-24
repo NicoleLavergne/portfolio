@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7b2a7aecf5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/sass/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Nicole Lavergne</title>
 </head>
 <body>
@@ -19,9 +22,9 @@
                 <nav class="topNav">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,98 +32,108 @@
 
         <div class="mainHeaderContainer">
             <div class="wrapper">
-                <div class="flexContainer">
-                    <div class="titleContainer">
+                <div class="titleContainer">
+                    <div class="titleBorder">
                         <h1>I'm Nicole</h1>
                         <p>Front end web developer</p>
-                        <button><a href="">Contact Me</a></button>
-                        
-                        <div class="socialNavTop">
-                            <ul>
-                                <li><i class="fab fa-linkedin" aria-label="linked in"></i></li>
-                                <li><i class="fab fa-github" aria-label="github"></i></li>
-                                <li><i class="fab fa-twitter" aria-label="twitter"></i></li>
-                            </ul>
+                        <div class="titleButton">
+                            <button class="contactButton"><a href="">Contact Me</a></button>
                         </div>
                     </div>
-    
-                    <div class="headshotContainer">
-                        <img src="images/headshot1.JPG" alt="Nicole standing in front of a yellow background">
-                    </div>
+                </div>
+                <div class="arrow bounce">
+                    <i class="fas fa-angle-double-down"></i>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="aboutMeInfo">
-                    <h2>About Me</h2>
-                    <p>I am a front end web developer who is passionate about creating meaningful projects. My dance background has given me
-                    the foundation to excel in fast-paced environments, effectively communicate and
-                    share my creative perspective. Web development has helped me to empathize with people’s struggles; I feel it is my
-                    responsibility to be a part of changing those situations.</p>
-                    <button><a href="">View My Projects</a></button>
+                    <div class="aboutMeText">
+                        <h2>About Me</h2>
+                        <p>I am a front end web developer who is passionate about creating meaningful and accessible applications. My dance
+                        background has given me the foundation to excel in a fast-paced environment, effectively communicate and share my
+                        creative perspective in every collaboration. I apply a user-centred approach to web development, and take ownership in
+                        using technology to solve problems for everyday users.</p>
+                        <div class="aboutButton">
+                            <button><a href="#projects">View My Projects</a></button>
+                        </div>
+                    </div>
+                    <div class="aboutImg">
+                        <div class="headshotContainer">
+                            <img src="images/headshot1.JPG" alt="Nicole standing in front of a yellow background">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="projects">
-            <div class="wrapper">
+        <section class="projects" id="projects">
+            <h2>My work</h2>
+            <div class="projectWrapper">
                 <div class="projectsContainer">
-                    <h2>My work</h2>
                     <div class="singleProjectContainer">
                         <div class="projectImageContainer">
-                            <img src="images/helpers.jpg" alt="">
+                            <img src="images/helpersComputer.png" alt="computer displaying mobile and desktop sites">
                         </div>
                         <h4>PSD Conversion</h4>
-                        <p>description about project</p>
-                        <button><a href="">Live</a></button>
-                        <button class="githubButton">
-                            <a href="https://github.com/NicoleLavergne/nicoleLavergneProjectTwo">Github</a>
-                        </button>
+                        <p>Creating a responsive site from a desktop PSD conversion  </p>
+                        <div class="projectButtonContainer">
+                            <button class="liveButton"><a href="https://nicolelavergne.github.io/nicoleLavergneProjectTwo/">Live</a></button>
+                            <button class="githubButton">
+                                <a href="https://github.com/NicoleLavergne/nicoleLavergneProjectTwo">Github</a>
+                            </button>
+                        </div>
                         <div class="projectLanguagesContainer">
-                            <p>Html5 / CSS & Sass</p>
+                            <p>HTML 5 / CSS & Sass</p>
                         </div>
                     </div>
                     <div class="singleProjectContainer">
                         <div class="projectImageContainer">
-                            <img src="images/santa.jpg" alt="">
+                            <img src="images/santaTablet.png" alt="">
                         </div>
                         <h4>Secret Santa</h4>
                         <p>description about project</p>
-                        <button><a href="https://secretsanta-c0277.firebaseapp.com/">Live</a></button>
-                        <button class="githubButton">Github</button>
+                        <div class="projectButtonContainer">
+                            <button class="liveButton"><a href="https://secretsanta-c0277.firebaseapp.com/">Live</a></button>
+                            <button class="githubButton">
+                                <a href="https://github.com/NicoleLavergne/NicoleLavergneProject5">Github</a>
+                            </button>
+                        </div>
                         <div class="projectLanguagesContainer">
-                            <p>Html5 / CSS & Sass / React / Firebase </p>
+                            <p>HTML 5 / CSS & Sass / React / Firebase </p>
                         </div>
                     </div>
                     <div class="singleProjectContainer">
                         <div class="projectImageContainer">
-                            <img src="images/makeup.jpg" alt="">
+                            <img src="images/makeupLaptop.png" alt="">
                         </div>
                         <h4>Makeup Ecommerce</h4>
                         <p>description about project</p>
-                        <button><a href="https://makeupyourmind-e0283.firebaseapp.com/">Live</a></button>
-                        <button class="githubButton">
-                            <a href="https://github.com/Mob-Eit/makeThisUp">Github</a>
-                            </button>
+                        <div class="projectButtonContainer">
+                            <button class="liveButton"><a href="https://makeupyourmind-e0283.firebaseapp.com/">Live</a></button>
+                            <button class="githubButton">
+                                <a href="https://github.com/Mob-Eit/makeThisUp">Github</a>
+                                </button>
+                        </div>
                         <div class="projectLanguagesContainer">
-                           <p>Html5 / CSS & Sass / React / Rest API / Firebase</p>
+                           <p>HTML 5 / CSS & Sass / React / Rest API / Firebase</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
 
-        <section class="languages">
+        <section class="languages" id="skills">
             <div class="wrapper">
                 <div class="languageContainer">
                     <h2>Skills</h2>
                     <div class="skillsIconContainer">
                         <i class="fab fa-html5" aria-label="html 5"></i>
-                        <i class="fab fa-js" aria-label="javascript"></i>
+                        <i class="fab fa-js" aria-label="javascript"></i> 
                         <i class="fab fa-react" aria-label="react"></i>
                         <i class="fab fa-sass" aria-label="sass"></i>
                         <i class="fab fa-git-alt" aria-label="git"></i>
@@ -129,13 +142,11 @@
                         <i class="fab fa-github" aria-label="github"></i>
                         <i class="devicon-visualstudio-plain"></i>
                     </div>
-                    <!-- all of the icons go here -->
                 </div>
             </div>
         </section>
 
-        <section class="contact wrapper">
-            <!-- <div class="wrapper"> -->
+        <section class="contact wrapper" id="contact">
                 <div class="touchContainer">
                     <div class="touchHeadingContainer">
                         <h2>Get In Touch</h2>
@@ -145,28 +156,29 @@
                     </div>
                 </div>
                 <div class="formContainer">
-                    <form action="http://www.focuspocus.io/magic/nicole.s.lavergne@gmail.com" 
-method="POST">
-                        <div class="formFlex">
-                            <div class="nameEmailContainer">
-                                <div>
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" placeholder="name" required>
+                    <form action="https://formspree.io/nicole.s.lavergne@gmail.com" method="POST">
+                        <fieldset>
+                            <div class="formFlex">
+                                <div class="nameEmailContainer">
+                                    <div class="name">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" placeholder="name" required>
+                                    </div>
+                                    <div class="email">
+                                        <label for="email">email</label>
+                                        <input type="email" name="email" placeholder="email" required>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label for="email">email</label>
-                                    <input type="email" name="email" placeholder="email" required>
+                                <div class="messageContainer">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" cols="30" rows="15" placeholder="type a message" required></textarea>
                                 </div>
                             </div>
-                            <div class="messageContainer">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="type a message" required></textarea>
+                            <div>
+                                <!-- <label for="send" aria-label="send" aria-hidden="true">Send Message</label> -->
+                                <input type="submit" value="Send message" name="send" class="submit">
                             </div>
-                        </div>
-                        <div>
-                            <label for="send">Send Message</label>
-                            <input type="submit" value="Send message" name="send" class="submit">
-                        </div>
+                        </fieldset>
                     </form>
                 </div>
             <!-- </div> -->
@@ -178,9 +190,9 @@ method="POST">
                 <nav class="footerNav">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="footerIconContainer">
@@ -192,8 +204,10 @@ method="POST">
                 </div>
             </div>
         </footer>
-
     </main>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
