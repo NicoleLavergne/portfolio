@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7b2a7aecf5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/sass/style.css">
@@ -37,7 +36,7 @@
                         <h1>I'm Nicole</h1>
                         <p>Front end web developer</p>
                         <div class="titleButton">
-                            <button class="contactButton"><a href="">Contact Me</a></button>
+                            <button class="contactButton"><a href="#contact">Contact Me</a></button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +79,7 @@
                             <img src="images/helpersComputer.png" alt="computer displaying mobile and desktop sites">
                         </div>
                         <h4>PSD Conversion</h4>
-                        <p>Creating a responsive site from a desktop PSD conversion  </p>
+                        <p>Created a fully responsive multi-webpage from a PSD file. </p>
                         <div class="projectButtonContainer">
                             <button class="liveButton"><a href="https://nicolelavergne.github.io/nicoleLavergneProjectTwo/">Live</a></button>
                             <button class="githubButton">
@@ -96,7 +95,7 @@
                             <img src="images/santaTablet.png" alt="">
                         </div>
                         <h4>Secret Santa</h4>
-                        <p>description about project</p>
+                        <p>Ready for the Holidays? Share this pass-around Secret Santa Generator with friends and family. Created using React and stored the users pairings by implementing Firebase</p>
                         <div class="projectButtonContainer">
                             <button class="liveButton"><a href="https://secretsanta-c0277.firebaseapp.com/">Live</a></button>
                             <button class="githubButton">
@@ -112,7 +111,7 @@
                             <img src="images/makeupLaptop.png" alt="">
                         </div>
                         <h4>Makeup Ecommerce</h4>
-                        <p>description about project</p>
+                        <p>A mob programming project created by using React, Rest API and Firebase to find a makeup product that matches your personal preferences. </p>
                         <div class="projectButtonContainer">
                             <button class="liveButton"><a href="https://makeupyourmind-e0283.firebaseapp.com/">Live</a></button>
                             <button class="githubButton">
@@ -147,41 +146,51 @@
         </section>
 
         <section class="contact wrapper" id="contact">
-                <div class="touchContainer">
-                    <div class="touchHeadingContainer">
-                        <h2>Get In Touch</h2>
-                    </div>
-                    <div class="touchPicContainer">
-                        <img src="images/headshot2.JPG" alt="">
-                    </div>
+            <div class="touchContainer">
+                <div class="touchHeadingContainer">
+                    <h2>Get In Touch</h2>
                 </div>
-                <div class="formContainer">
-                    <form action="https://formspree.io/nicole.s.lavergne@gmail.com" method="POST">
-                        <fieldset>
-                            <div class="formFlex">
-                                <div class="nameEmailContainer">
-                                    <div class="name">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" placeholder="name" required>
-                                    </div>
-                                    <div class="email">
-                                        <label for="email">email</label>
-                                        <input type="email" name="email" placeholder="email" required>
-                                    </div>
+                <div class="touchPicContainer">
+                    <img src="images/headshot2.JPG" alt="">
+                </div>
+                <div class="footerIconContainer">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nicole-lavergne-11741318b/?originalSubdomain=ca"><i class="fab fa-linkedin" aria-label="linked in"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/NicoleLavergne"><i class="fab fa-github" aria-label="github"></i></a></li>
+                        <li>
+                            <a href="https://twitter.com/nicolelavergnee"><i class="fab fa-twitter" aria-label="twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formContainer">
+                <form action="https://formspree.io/nicole.s.lavergne@gmail.com" method="POST">
+                    <fieldset>
+                        <div class="formFlex">
+                            <div class="nameEmailContainer">
+                                <div class="name">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" placeholder="name" required>
                                 </div>
-                                <div class="messageContainer">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" cols="30" rows="15" placeholder="type a message" required></textarea>
+                                <div class="email">
+                                    <label for="email">email</label>
+                                    <input type="email" name="email" placeholder="email" required>
                                 </div>
                             </div>
-                            <div>
-                                <!-- <label for="send" aria-label="send" aria-hidden="true">Send Message</label> -->
-                                <input type="submit" value="Send message" name="send" class="submit">
+                            <div class="messageContainer">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="15" placeholder="type a message" required></textarea>
                             </div>
-                        </fieldset>
-                    </form>
-                </div>
-            <!-- </div> -->
+                        </div>
+                        <div>
+                            <input type="submit" value="Send message" name="send" class="submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </section>
 
         <footer>
@@ -195,13 +204,6 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <div class="footerIconContainer">
-                    <ul>
-                        <li><i class="fab fa-linkedin" aria-label="linked in"></i></li>
-                        <li><i class="fab fa-github" aria-label="github"></i></li>
-                        <li><i class="fab fa-twitter" aria-label="twitter"></i></li>
-                    </ul>
-                </div>
             </div>
         </footer>
     </main>

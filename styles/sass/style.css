@@ -347,8 +347,10 @@ button, .submit {
 }
 
 .titleContainer p {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  letter-spacing: .05rem;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .titleBorder {
@@ -358,8 +360,21 @@ button, .submit {
   padding: 2rem;
 }
 
-.titleButton {
+.titleButton button {
   margin-top: 1rem;
+  border: 1px solid transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.titleButton button:hover {
+  background: #FAF2E7;
+  border: 1px solid #FEB633;
+}
+
+.titleButton button a {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .about {
@@ -385,7 +400,7 @@ button, .submit {
 .aboutMeInfo p {
   border-left: 1.5px solid #FEB633;
   padding-left: 1rem;
-  font-size: .8rem;
+  font-size: 1rem;
   line-height: 1.6rem;
   letter-spacing: .02rem;
   margin: 0;
@@ -401,8 +416,20 @@ button, .submit {
   margin: .5rem;
 }
 
+.aboutMeInfo .aboutButton button {
+  border: 1px solid transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.aboutMeInfo .aboutButton button:hover {
+  border: 1px solid #FEB633;
+  background: #FAF2E7;
+}
+
 .aboutMeInfo .aboutButton button a {
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .headshotContainer {
@@ -417,20 +444,17 @@ button, .submit {
 
 .projects {
   background: #FAF2E7;
-  height: 80vh;
   border-radius: 3px;
+  padding-bottom: 5rem;
 }
 
 .projects h2 {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   letter-spacing: .05rem;
 }
 
 .projectWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -472,7 +496,14 @@ button, .submit {
           flex-grow: 1;
 }
 
-.singleProjectContainer .projectButtonContainer {
+.singleProjectContainer p {
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  line-height: 1.1rem;
+}
+
+.projectButtonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,8 +511,13 @@ button, .submit {
       justify-content: space-around;
 }
 
-.singleProjectContainer .projectButtonContainer button {
+.projectButtonContainer button {
   width: 40%;
+}
+
+.projectLanguagesContainer p {
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 
 .projectImageContainer {
@@ -611,6 +647,43 @@ fieldset {
   width: 90%;
 }
 
+.footerIconContainer {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footerIconContainer ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerIconContainer ul li {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footerIconContainer ul li a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #FEB633;
+}
+
 form input {
   margin-top: .5rem;
   font-size: 1rem;
@@ -656,6 +729,14 @@ label {
 
 .submit {
   margin-top: 2rem;
+  border: 1px solid transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.submit:hover {
+  border: 1px solid #FEB633;
+  background: #FAF2E7;
 }
 
 footer {
@@ -673,6 +754,7 @@ footer h3 {
 
 .footerNav {
   width: 70%;
+  margin: 0 auto;
 }
 
 .footerNav ul {
@@ -681,30 +763,8 @@ footer h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-aronud;
-      -ms-flex-pack: space-aronud;
-          justify-content: space-aronud;
-}
-
-.footerIconContainer {
-  width: 30%;
-}
-
-.footerIconContainer ul {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footerIconContainer ul li {
-  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
