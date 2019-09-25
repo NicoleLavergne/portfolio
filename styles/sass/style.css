@@ -193,9 +193,17 @@ h3 {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
   margin: .1rem;
+  display: inline-block;
 }
 
-.headerNavContainer, .bottomNavContainer {
+.headerNavContainer {
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topNavContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +214,8 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
+  padding: .15rem;
+  margin: 0 1rem;
 }
 
 .topNav ul, .footerNav ul {
@@ -218,6 +227,7 @@ h3 {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0;
+  padding: 0;
 }
 
 .topNav ul li, .footerNav ul li {
@@ -250,7 +260,7 @@ a {
   background: #FAF2E7;
   border-radius: 3px 0px 0px 3px;
   height: 90vh;
-  margin: 0 0 0 3rem;
+  margin: 1rem 0 0 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,7 +275,7 @@ a {
 }
 
 .arrow i {
-  font-size: 1rem;
+  font-size: 1.6rem;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -461,70 +471,60 @@ button, .submit {
 }
 
 .projects h2 {
+  margin: 0;
   text-align: center;
-  padding-top: 1rem;
+  font-size: 3rem;
+  padding-top: 2rem;
   letter-spacing: .05rem;
-}
-
-.projectWrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 1500px;
-  max-width: 98%;
-  margin: 0 auto;
-}
-
-.projectWrapper h2 {
-  padding-top: 1rem;
 }
 
 .projectsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .singleProjectContainer {
-  width: 30%;
-  margin: .25rem;
+  width: 80%;
+  margin: 3rem auto;
   -webkit-transition: all .3s;
   transition: all .3s;
   text-align: center;
-}
-
-.singleProjectContainer:hover {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.singleProjectContainer:active {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.singleProjectContainer p {
-  text-align: left;
-  font-size: 1rem;
-  letter-spacing: .05rem;
-  line-height: 1.1rem;
-}
-
-.projectButtonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-.projectButtonContainer button {
-  width: 40%;
+.projectInfo {
+  width: 50%;
+  text-align: center;
+}
+
+.projectInfo h4 {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  letter-spacing: .05rem;
+  line-height: 1.1rem;
+  border-bottom: 1px solid #FEB633;
+}
+
+.projectInfo p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem auto;
+  width: 90%;
+}
+
+.alexa {
+  color: #575151;
+  font-style: italic;
+  border-bottom: 1px solid #575151;
 }
 
 .projectLanguagesContainer p {
@@ -533,8 +533,41 @@ button, .submit {
 }
 
 .projectImageContainer {
-  width: 100%;
+  width: 40%;
+  margin: 1rem;
   border-radius: 3px;
+}
+
+.projectButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projectButtonContainer button {
+  width: 40%;
+}
+
+.liveButton {
+  border: 1px solid transparent;
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.liveButton:hover {
+  background: #FAF2E7;
+  border: 1px solid #FEB633;
+}
+
+.liveButton:hover a {
+  color: #FEB633;
 }
 
 .githubButton {
@@ -547,6 +580,10 @@ button, .submit {
   transition: all .3s;
 }
 
+.githubButton a {
+  font-size: 1.2rem;
+}
+
 .githubButton:hover {
   background: #FEB633;
   border: 1px solid #32333C;
@@ -556,28 +593,16 @@ button, .submit {
   color: #32333C;
 }
 
-.liveButton {
-  border: 1px solid transparent;
-}
-
-.liveButton:hover {
-  background: #FAF2E7;
-  border: 1px solid #FEB633;
-}
-
-.liveButton:hover a {
-  color: #FEB633;
-}
-
 .languages {
   background: #FEB633;
   text-align: center;
   margin: 0 auto;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
 }
 
 .languageContainer h2 {
-  color: #32333C;
+  color: black;
+  margin: 1rem auto;
 }
 
 .skillsIconContainer {
@@ -587,6 +612,7 @@ button, .submit {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .skillsIconContainer i {
@@ -745,10 +771,17 @@ label {
 footer {
   background: #F4E0C8;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer h3 {
-  text-align: center;
+  margin: 0 auto;
 }
 
 .bottomNavContainer {

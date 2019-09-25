@@ -15,18 +15,24 @@
 <body>
 
     <header>
-        <div class="headerNavContainer wrapper">
-            <h3>Nicole Lavergne.</h3>
-            <div class="topNavContainer">
-                <nav class="topNav">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="headerNavContainer">
+            <!-- <div class="headerWrapper"> -->
+                <div class="topNavContainer">
+                    <div>
+                        <h3>Nicole Lavergne.</h3>
+                    </div>
+                    <div>
+                        <nav class="topNav">
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            <!-- </div> -->
         </div>
 
         <div class="mainHeaderContainer">
@@ -57,9 +63,6 @@
                         background has given me the foundation to excel in a fast-paced environment, effectively communicate and share my
                         creative perspective in every collaboration. I apply a user-centred approach to web development, and take ownership in
                         using technology to solve problems for everyday users.</p>
-                        <!-- <div class="aboutButton">
-                            <button><a href="#projects">View My Projects</a></button>
-                        </div> -->
                     </div>
                     <div class="aboutImg">
                         <div class="headshotContainer">
@@ -72,59 +75,77 @@
 
         <section class="projects" id="projects">
             <h2>My work</h2>
-            <div class="projectWrapper">
                 <div class="projectsContainer">
                     <div class="singleProjectContainer">
+                        <div class="projectInfo">
+                            <h4>Secret Santa</h4>
+                            <p>Ready for the Holidays? Share this pass-around Secret Santa Generator with friends and family. This was created with React and the users data was stored by implementing Firebase.</p>
+                            <div class="projectLanguagesContainer">
+                                <p>HTML 5 / CSS & Sass / JavaScript/  React / Firebase </p>
+                            </div>
+                            <div class="projectButtonContainer">
+                                <button class="liveButton"><a href="https://secretsanta-c0277.firebaseapp.com/">Live</a></button>
+                                <button class="githubButton"><a href="https://github.com/NicoleLavergne/NicoleLavergneProject5">Github</a>
+                                </button>
+                            </div>
+                        </div>
                         <div class="projectImageContainer">
-                            <img src="images/helpersComputer.png" alt="computer displaying mobile and desktop sites">
-                        </div>
-                        <h4>PSD Conversion</h4>
-                        <p>Created a fully responsive multi-webpage from a PSD file. </p>
-                        <div class="projectButtonContainer">
-                            <button class="liveButton"><a href="https://nicolelavergne.github.io/nicoleLavergneProjectTwo/">Live</a></button>
-                            <button class="githubButton">
-                                <a href="https://github.com/NicoleLavergne/nicoleLavergneProjectTwo">Github</a>
-                            </button>
-                        </div>
-                        <div class="projectLanguagesContainer">
-                            <p>HTML 5 / CSS & Sass</p>
-                        </div>
-                    </div>
-                    <div class="singleProjectContainer">
-                        <div class="projectImageContainer">
-                            <img src="images/santaTablet.png" alt="">
-                        </div>
-                        <h4>Secret Santa</h4>
-                        <p>Ready for the Holidays? Share this pass-around Secret Santa Generator with friends and family. Created using React and stored the users pairings by implementing Firebase</p>
-                        <div class="projectButtonContainer">
-                            <button class="liveButton"><a href="https://secretsanta-c0277.firebaseapp.com/">Live</a></button>
-                            <button class="githubButton">
-                                <a href="https://github.com/NicoleLavergne/NicoleLavergneProject5">Github</a>
-                            </button>
-                        </div>
-                        <div class="projectLanguagesContainer">
-                            <p>HTML 5 / CSS & Sass / React / Firebase </p>
+                            <img src="images/santaTablet.png"alt="">
                         </div>
                     </div>
                     <div class="singleProjectContainer">
                         <div class="projectImageContainer">
                             <img src="images/makeupLaptop.png" alt="">
                         </div>
-                        <h4>Makeup Ecommerce</h4>
-                        <p>A mob programming project created by using React, Rest API and Firebase to find a makeup product that matches your personal preferences. </p>
-                        <div class="projectButtonContainer">
-                            <button class="liveButton"><a href="https://makeupyourmind-e0283.firebaseapp.com/">Live</a></button>
-                            <button class="githubButton">
-                                <a href="https://github.com/Mob-Eit/makeThisUp">Github</a>
-                                </button>
-                        </div>
-                        <div class="projectLanguagesContainer">
-                           <p>HTML 5 / CSS & Sass / React / Rest API / Firebase</p>
+                        <div class="projectInfo">
+                            <h4>MakeApp - Ecommerce</h4>
+                            <p>A mob programming project created by using React, Rest API and Firebase to find a makeup product that matches your personal preferences. </p>
+                            <div class="projectLanguagesContainer">
+                                <p>HTML 5 / CSS & Sass / JavaScript / React / Rest API / Firebase</p>
+                            </div>
+                            <div class="projectButtonContainer">
+                                <button class="liveButton"><a href="https://makeupyourmind-e0283.firebaseapp.com/">Live</a></button>
+                                <button class="githubButton"><a href="https://github.com/Mob-Eit/makeThisUp">Github</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            <!-- </div> -->
-        </section>
+                <div class="singleProjectContainer">
+                    <div class="projectInfo">
+                        <h4>Best Buds</h4>
+                        <p>A paired programming project in collaboration with <a href="http://alexawolo.com/" class="alexa"><span>Alexa Woloszuk</span></a>. We created an app to help beginner cannabis users find an appropriate strain depending on their desired mood.</p>
+                        <div class="projectLanguagesContainer">
+                            <p>HTML 5 / JavaScript / JQuery / REST API / CSS & Sass</p>
+                        </div>
+                        <div class="projectButtonContainer">
+                            <button class="liveButton"><a
+                                    href="https://ajointeffort.github.io/AlexaNicoleProject4/">Live</a></button>
+                            <button class="githubButton"><a href="https://github.com/NicoleLavergne/BestBuds">Github</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projectImageContainer">
+                        <img src="images/bestBuds.png" alt="computer displaying mobile and desktop sites">
+                    </div>
+                </div>
+                <div class="singleProjectContainer">
+                    <div class="projectImageContainer">
+                        <img src="images/helpersComputer.png" alt="computer displaying mobile and desktop sites">
+                    </div>
+                    <div class="projectInfo">
+                        <h4>PSD Conversion</h4>
+                        <p>Created a fully responsive multi-webpage from a PSD file. </p>
+                        <div class="projectLanguagesContainer">
+                            <p>HTML 5 / CSS & Sass</p>
+                        </div>
+                        <div class="projectButtonContainer">
+                            <button class="liveButton"><a href="https://nicolelavergne.github.io/nicoleLavergneProjectTwo/">Live</a></button>
+                            <button class="githubButton"><a href="https://github.com/NicoleLavergne/nicoleLavergneProjectTwo">Github</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         <section class="languages" id="skills">
             <div class="wrapper">
@@ -147,9 +168,7 @@
 
         <section class="contact wrapper" id="contact">
             <div class="touchContainer">
-                <!-- <div class="touchHeadingContainer"> -->
-                    <h2>Get In Touch</h2>
-                <!-- </div> -->
+                <h2>Get In Touch</h2>
             </div>
             <div class="formContainer">
                 <form action="https://formspree.io/nicole.s.lavergne@gmail.com" method="POST">

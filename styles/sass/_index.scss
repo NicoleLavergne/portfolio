@@ -25,21 +25,30 @@ h3{
     font-family: $heading;
     font-size:1rem;
     margin:.1rem;
+    display:inline-block;
 }
 
-.headerNavContainer, .bottomNavContainer{
+.headerNavContainer{
+    background:white;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.topNavContainer{
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin:0 auto;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:.15rem;
+    margin: 0 1rem;
 }
-
 
 .topNav, .footerNav {
     ul{
         display:flex;
         flex-direction: row;
         margin:0;
+        padding:0;
         
         li{
             margin:0.5rem;
@@ -72,7 +81,7 @@ a{
     background:$pale;
     border-radius: 3px 0px 0px 3px;
     height:90vh;
-    margin:0 0 0 3rem;
+    margin:1rem 0 0 3rem;
     display:flex;
     align-items:center;
 }
@@ -81,7 +90,7 @@ a{
     margin-top:2rem;
     text-align: center;
     i{
-        font-size:1rem;
+        font-size:1.6rem;
         transition:all .2s;
 
         &:hover{
@@ -95,6 +104,7 @@ a{
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
 }
+
 @keyframes bounce {
     0%,
     20%,
@@ -134,7 +144,7 @@ button, .submit{
     }
     p{
         font-size:1rem;
-        letter-spacing: .05rem;
+        letter-spacing:.05rem;
         margin:0;
         text-transform: uppercase;
     }
@@ -161,7 +171,6 @@ button, .submit{
         font-size: 1rem;
         font-weight: 700;
     }
-
 }
 
 .about{
@@ -205,10 +214,8 @@ button, .submit{
                 font-weight: 700;
             }
         }
-    }
-    
+    } 
 }
-
 
 .aboutImg{
     display:flex;
@@ -228,57 +235,54 @@ button, .submit{
     padding-bottom:5rem;
     
     h2{
+        margin:0;
         text-align: center;
-        padding-top:1rem;
+        font-size:3rem;
+        padding-top:2rem;
         letter-spacing: .05rem;
-    }
-}
-
-.projectWrapper{
-    align-items:center;
-    width:1500px;
-    max-width:98%;
-    margin:0 auto;
-    h2{ 
-       padding-top:1rem;
     }
 }
 
 .projectsContainer{
     display:flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .singleProjectContainer{
-    width:30%;
-    margin:.25rem;
+    width:80%;
+    margin:3rem auto;
     transition:all .3s;
     text-align: center;
+    display:flex;
+}
 
-    &:hover{
-        flex-grow: 1;
-    }
-
-    &:active{
-        flex-grow:1;
-    }
-
-    p{
-        text-align: left;
-        font-size:1rem;
+.projectInfo{
+    width:50%;
+    text-align: center;
+    h4{
+        margin:0;
+        padding:1rem;
+        font-family: $heading;
+        font-size:2rem;
         letter-spacing: .05rem;
         line-height:1.1rem;
+        border-bottom:1px solid $orange;
+    }
+    p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin:1rem auto;
+        width:90%;
+        
     }
 }
 
-.projectButtonContainer{
-    display:flex;
-    justify-content: space-around;
-
-    button{
-        width:40%;
-    }
+.alexa {
+        color:$grey;
+        font-style:italic;
+        border-bottom:1px solid $grey;
 }
+
 .projectLanguagesContainer{
     p{
         font-size:1rem;
@@ -287,8 +291,32 @@ button, .submit{
 }
 
 .projectImageContainer{
-    width:100%;
+    width:40%;
+    margin:1rem;
     border-radius: 3px;
+}
+
+.projectButtonContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    button{
+        width:40%;
+    }
+}
+
+.liveButton{
+    border:1px solid transparent;
+    margin-right:.5rem;
+    font-size:1.2rem;
+    &:hover{
+        background:$pale;
+        border:1px solid $orange;
+
+        a{
+            color:$orange;
+        }
+    }
 }
 
 .githubButton{
@@ -298,6 +326,10 @@ button, .submit{
     border-radius: 2px;
     letter-spacing: .1rem;
     transition: all .3s;
+
+    a{
+        font-size:1.2rem;
+    }
 
     &:hover{
         background:$orange;
@@ -309,35 +341,26 @@ button, .submit{
     }
 }
 
-.liveButton{
-    border:1px solid transparent;
-
-    &:hover{
-        background:$pale;
-        border:1px solid $orange;
-
-        a{
-            color:$orange;
-        }
-    }
-}
 
 .languages{
     background:$orange;
     text-align: center;
     margin:0 auto;
-    padding:1rem 0rem;
+    padding:2rem 0rem;
 }
 
 .languageContainer{
     h2{
-        color:$black;
+        color:black;
+        margin:1rem auto;
+
     }
 }
 
 .skillsIconContainer{
     display:flex;
     justify-content: space-between;
+    margin-bottom:1rem;
 
     i{
         font-size:3rem;
@@ -374,17 +397,6 @@ fieldset{
     display:flex;
     flex-direction: column;
 }
-
-// .touchPicContainer{
-//     margin-top:1rem;
-//     display:flex;
-//     justify-content: flex-end;
-
-//     img{
-//         border-radius: 3px;
-//         width:90%;
-//     }
-// }
 
 .footerIconContainer{
     margin-top:1rem;
@@ -475,9 +487,11 @@ label{
 footer{
     background:$footer;
     padding:1rem;
+    display:flex;
+    flex-direction: column;
 
     h3{
-        text-align: center;
+        margin:0 auto;
     }
 } 
 
