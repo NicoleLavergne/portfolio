@@ -177,7 +177,9 @@ button, .submit{
         margin-right:1rem;
     }
     p{
-        border-left: 1.5px solid $orange;
+        border-left: 1.5px solid 
+        $orange;
+        width:70%;
         padding-left:1rem;
         font-size:1rem;
         line-height:1.6rem;
@@ -208,9 +210,11 @@ button, .submit{
 }
 
 
-.headshotContainer{
-    width:100%;
-    margin:1rem;
+.aboutImg{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     img{
         border-radius: 3px;
@@ -337,57 +341,50 @@ button, .submit{
 
     i{
         font-size:3rem;
-
     }
 }
 
 .contact{
     display:flex;
+    flex-direction: column;
     align-items: center;
-    padding:1rem 0;
-    height:100vh;
-
+    padding:2rem 0;
+    // height:100vh;
 }
 
 .touchContainer{
-    width:35%; 
-    display:flex;
-    margin-right:1rem;
-    flex-direction: column;
-    align-content:right;
-    justify-content:right;
 
     h2{
-        text-align:right;
-        margin:0;
+        text-align:center;
+        margin:2rem;
     }
 
 }
 
 .formContainer{
-    width:60%;
     display:flex;
-    // align-content: center;
 }
 
 fieldset{
     border-radius: 3px;
     padding:1rem;
 }
+
 .formFlex{
     display:flex;
+    flex-direction: column;
 }
 
-.touchPicContainer{
-    margin-top:1rem;
-    display:flex;
-    justify-content: flex-end;
+// .touchPicContainer{
+//     margin-top:1rem;
+//     display:flex;
+//     justify-content: flex-end;
 
-    img{
-        border-radius: 3px;
-        width:90%;
-    }
-}
+//     img{
+//         border-radius: 3px;
+//         width:90%;
+//     }
+// }
 
 .footerIconContainer{
     margin-top:1rem;
@@ -430,22 +427,23 @@ form{
 }
 
 .nameEmailContainer{
-    width:50%;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
 
     .name{
-        margin-bottom:1rem;
+        margin-right:2rem;
     }
-
 }
 
 .messageContainer{
-    margin-left:2rem;
-    width:50%;
+    margin-top:1rem;
+    display:flex;
+    flex-direction:column;
 
     textarea{
+        border:1px solid $grey;
         margin-top:1rem;
+        padding:1rem;
     }
 }
 
@@ -456,17 +454,23 @@ label{
     letter-spacing: .05rem;
 }
 
-.submit{
-    margin-top:2rem;
-    border:1px solid transparent;
-    transition:all .3s;
+.submitContainer{
+    display:flex;
+    justify-content: center;
 
-    &:hover{
-        border:1px solid $orange;
-        background:$pale;
+    .submit{
+        margin-top:2rem;
+        border:1px solid transparent;
+        transition:all .3s;
+        text-align: center;
+    
+    
+        &:hover{
+            border:1px solid $orange;
+            background:$pale;
+        }
     }
 }
-
 
 footer{
     background:$footer;
