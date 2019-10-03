@@ -195,26 +195,6 @@ button, .submit{
         letter-spacing:.02rem;
         margin:0;
     }
-    
-    .aboutButton{
-        display:flex;
-        align-items: center;
-        margin:.5rem;
-        
-        button{
-            border:1px solid transparent;
-            transition:all .3s;
-
-            &:hover{
-                border:1px solid $orange;
-                background:$pale;
-            }
-            a{
-                font-size: 1rem;
-                font-weight: 700;
-            }
-        }
-    } 
 }
 
 .aboutImg{
@@ -291,7 +271,7 @@ button, .submit{
 }
 
 .projectImageContainer{
-    width:40%;
+    width:45%;
     margin:1rem;
     border-radius: 3px;
 }
@@ -309,6 +289,10 @@ button, .submit{
     border:1px solid transparent;
     margin-right:.5rem;
     font-size:1.2rem;
+
+    a{
+        padding:10px 15px;
+    }
     &:hover{
         background:$pale;
         border:1px solid $orange;
@@ -328,6 +312,7 @@ button, .submit{
     transition: all .3s;
 
     a{
+        margin:0 auto;
         font-size:1.2rem;
     }
 
@@ -372,7 +357,6 @@ button, .submit{
     flex-direction: column;
     align-items: center;
     padding:2rem 0;
-    // height:100vh;
 }
 
 .touchContainer{
@@ -507,5 +491,155 @@ footer{
         padding:0;
         display:flex;
         justify-content: space-between;
+    }
+}
+
+@media(max-width: 768px){
+
+    .aboutMeInfo{
+        h2{
+            text-align: center;
+        }
+        p{
+            width:95%;
+        }
+
+    }
+    .projects{
+        padding-bottom:3rem;
+    
+    h2{
+        font-size:2.5rem;
+    }
+    }
+
+    .singleProjectContainer{
+        width:95%;
+        margin:1.5rem auto;
+    }
+
+    .projectInfo{
+        h4{
+            padding:1rem;
+            font-size:2rem;
+    }
+        p{
+            font-size: 1.3rem;
+            margin:.5rem auto;
+            width:95%;
+        }
+    }
+
+    .projectLanguagesContainer{
+        p{
+            padding-top:1rem;
+            color:black;
+            font-size:.9rem;
+        }
+    }
+
+}
+
+@media(max-width: 640px){
+
+    .projects{
+            padding-bottom:1.5rem;
+        }
+
+        .projectInfo{
+            h4{
+                line-height: 1.5rem;
+                padding:1rem;
+                font-size:1.8rem;
+        }
+            p{
+                font-size: 1rem;
+                margin:.3rem auto;
+                line-height: 1.3rem;
+            }
+        }
+
+        .skillsIconContainer{
+        i{
+            font-size:1.8rem;
+        }
+    }
+
+    .liveButton{
+    border:1px solid transparent;
+    margin-right:.5rem;
+    font-size:1rem;
+
+    a{
+        padding:10px 15px;
+    }
+}
+
+    .githubButton{
+        a{
+            font-size:1rem;
+        }
+    }
+}
+
+@media(max-width: 490px){
+
+    html{
+        font-size:90%;
+    }
+    .singleProjectContainer{
+        display:block;
+        padding:1rem;
+        border-radius:0px;
+    }
+
+    .projectImageContainer{
+        width:55%;
+        margin:2rem auto;
+
+    }
+
+    .projectInfo{
+        width:100%;
+        
+        p{
+            line-height:1.6rem;
+            margin-top:1rem;
+            width:90%;
+        }
+    }
+
+    .projectButtonContainer{
+        margin:2rem auto;
+        button{
+            width:40%;
+        }
+    }
+}
+
+@media(max-width: 397px){
+    html{
+        font-size:80%;
+    }
+
+    .titleContainer{
+        width:95%;
+    }
+
+    .about{
+        height:auto;
+        padding:3rem 0;
+}
+
+    .aboutMeInfo{
+        display:block;
+    
+        p{
+            width:100%;
+        }
+    }
+
+    .aboutImg{
+        display:none;
     }
 }

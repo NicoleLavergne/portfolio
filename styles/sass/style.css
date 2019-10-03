@@ -417,32 +417,6 @@ button, .submit {
   margin: 0;
 }
 
-.aboutMeInfo .aboutButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: .5rem;
-}
-
-.aboutMeInfo .aboutButton button {
-  border: 1px solid transparent;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.aboutMeInfo .aboutButton button:hover {
-  border: 1px solid #FEB633;
-  background: #FAF2E7;
-}
-
-.aboutMeInfo .aboutButton button a {
-  font-size: 1rem;
-  font-weight: 700;
-}
-
 .aboutImg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,7 +507,7 @@ button, .submit {
 }
 
 .projectImageContainer {
-  width: 40%;
+  width: 45%;
   margin: 1rem;
   border-radius: 3px;
 }
@@ -561,6 +535,10 @@ button, .submit {
   font-size: 1.2rem;
 }
 
+.liveButton a {
+  padding: 10px 15px;
+}
+
 .liveButton:hover {
   background: #FAF2E7;
   border: 1px solid #FEB633;
@@ -581,6 +559,7 @@ button, .submit {
 }
 
 .githubButton a {
+  margin: 0 auto;
   font-size: 1.2rem;
 }
 
@@ -802,5 +781,119 @@ footer h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .aboutMeInfo h2 {
+    text-align: center;
+  }
+  .aboutMeInfo p {
+    width: 95%;
+  }
+  .projects {
+    padding-bottom: 3rem;
+  }
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+  .singleProjectContainer {
+    width: 95%;
+    margin: 1.5rem auto;
+  }
+  .projectInfo h4 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .projectInfo p {
+    font-size: 1.3rem;
+    margin: .5rem auto;
+    width: 95%;
+  }
+  .projectLanguagesContainer p {
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects {
+    padding-bottom: 1.5rem;
+  }
+  .projectInfo h4 {
+    line-height: 1.5rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  .projectInfo p {
+    font-size: 1rem;
+    margin: .3rem auto;
+    line-height: 1.3rem;
+  }
+  .skillsIconContainer i {
+    font-size: 1.8rem;
+  }
+  .liveButton {
+    border: 1px solid transparent;
+    margin-right: .5rem;
+    font-size: 1rem;
+  }
+  .liveButton a {
+    padding: 10px 15px;
+  }
+  .githubButton a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 490px) {
+  html {
+    font-size: 90%;
+  }
+  .singleProjectContainer {
+    display: block;
+    padding: 1rem;
+    border-radius: 0px;
+  }
+  .projectImageContainer {
+    width: 55%;
+    margin: 2rem auto;
+  }
+  .projectInfo {
+    width: 100%;
+  }
+  .projectInfo p {
+    line-height: 1.6rem;
+    margin-top: 1rem;
+    width: 90%;
+  }
+  .projectButtonContainer {
+    margin: 2rem auto;
+  }
+  .projectButtonContainer button {
+    width: 40%;
+  }
+}
+
+@media (max-width: 397px) {
+  html {
+    font-size: 80%;
+  }
+  .titleContainer {
+    width: 95%;
+  }
+  .about {
+    height: auto;
+    padding: 3rem 0;
+  }
+  .aboutMeInfo {
+    display: block;
+  }
+  .aboutMeInfo p {
+    width: 100%;
+  }
+  .aboutImg {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
